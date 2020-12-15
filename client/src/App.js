@@ -6,7 +6,7 @@ import Movie from './Movies/Movie';
 import MovieList from './Movies/MovieList';
 
 export default function App () {
-  const [saved, setSaved] = useState([]); // Stretch: the ids of "saved" movies
+  // const [saved, setSaved] = useState([]); // Stretch: the ids of "saved" movies
   const [movieList, setMovieList] = useState([]);
 
   useEffect(() => {
@@ -32,11 +32,11 @@ export default function App () {
 
   return (
     <div>
-      <SavedList list={[ /* This is stretch */]} />
+   {/* <SavedList list={[ /* This is stretch */}
        
 <Switch>
       <Route exact path='/'>
-        <MovieList movies={MovieList} />
+        <MovieList movies={movieList} />
       </Route>
       <Route path='/movies/:id'>
         <Movie />
